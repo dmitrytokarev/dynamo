@@ -28,6 +28,7 @@ limitations under the License.
 ### The Era of Multi-Node, Multi-GPU
 
 ![GPU Evolution](./docs/images/frontpage-gpu-evolution.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdmitrytokarev%2Fdynamo.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdmitrytokarev%2Fdynamo?ref=badge_shield)
 
 
 Large language models are quickly outgrowing the memory and compute budget of any single GPU. Tensor-parallelism solves the capacity problem by spreading each layer across many GPUs—and sometimes many servers—but it creates a new one: how do you coordinate those shards, route requests, and share KV cache fast enough to feel like one accelerator? This orchestration gap is exactly what NVIDIA Dynamo is built to close.
@@ -206,3 +207,7 @@ docker compose -f deploy/metrics/docker-compose.yml up -d
 cd examples/llm
 dynamo serve graphs.agg:Frontend -f configs/agg.yaml
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdmitrytokarev%2Fdynamo.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdmitrytokarev%2Fdynamo?ref=badge_large)
